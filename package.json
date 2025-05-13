@@ -1,5 +1,5 @@
 {
-  "name": "@username/calendar-test-module",
+  "name": "@jacob-thesqd/calendar-test-module",
   "version": "1.0.0",
   "description": "Reusable calendar component for React applications",
   "main": "dist/index.js",
@@ -12,9 +12,10 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/calendar-test-module.git"
+    "url": "git+https://github.com/jacob-thesqd/calendar-test-module.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

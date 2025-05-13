@@ -16,7 +16,7 @@ This guide helps you integrate the Calendar Component into various frameworks an
 
 ```jsx
 import { useState } from 'react';
-import { CalendarComponent } from 'calendar-test-module';
+import { CalendarComponent } from '@jacob-thesqd/calendar-test-module';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ Next.js requires client-side components when using interactive elements:
 // app/calendar/page.tsx
 "use client";
 
-import { CalendarComponent } from 'calendar-test-module';
+import { CalendarComponent } from '@jacob-thesqd/calendar-test-module';
 
 export default function CalendarPage() {
   return (
@@ -90,7 +90,7 @@ export default function Sidebar() {
 ```jsx
 // src/pages/calendar.js
 import React from 'react';
-import { CalendarComponent } from 'calendar-test-module';
+import { CalendarComponent } from '@jacob-thesqd/calendar-test-module';
 import Layout from '../components/layout';
 
 export default function CalendarPage() {
@@ -108,7 +108,7 @@ export default function CalendarPage() {
 ```jsx
 // src/App.jsx
 import { useState } from 'react'
-import { CalendarComponent } from 'calendar-test-module'
+import { CalendarComponent } from '@jacob-thesqd/calendar-test-module'
 import './App.css'
 
 function App() {
@@ -132,7 +132,7 @@ export default App
 ```jsx
 // src/App.js
 import React from 'react';
-import { CalendarComponent } from 'calendar-test-module';
+import { CalendarComponent } from '@jacob-thesqd/calendar-test-module';
 import './App.css';
 
 function App() {
@@ -160,7 +160,7 @@ The component is built with utility classes compatible with Tailwind CSS. If you
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
-    './node_modules/calendar-test-module/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@jacob-thesqd/calendar-test-module/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {},
@@ -175,7 +175,7 @@ You can connect the calendar to your own data sources:
 
 ```jsx
 import { useEffect, useState } from 'react';
-import { EventCalendar, type CalendarEvent } from 'calendar-test-module';
+import { EventCalendar, type CalendarEvent } from '@jacob-thesqd/calendar-test-module';
 
 export default function CalendarWithAPI() {
   const [events, setEvents] = useState<CalendarEvent[]>([]);
@@ -237,4 +237,4 @@ export default function CalendarWithAPI() {
 - If using Tailwind CSS, ensure your content configuration includes the component
 - For other styling solutions, you may need to add custom CSS
 
-For more help, please [submit an issue](https://github.com/username/calendar-test-module/issues). 
+For more help, please [submit an issue](https://github.com/jacob-thesqd/calendar-test-module/issues). 

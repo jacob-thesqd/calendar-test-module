@@ -14,21 +14,31 @@ A fully featured React calendar component with event management capabilities. Th
 
 ## Installation
 
-```bash
-# Using npm
-npm install calendar-test-module
+This is a private package hosted on GitHub Packages. To install it, you'll need to configure npm to access GitHub Packages for the @jacob-thesqd scope:
 
-# Using yarn
-yarn add calendar-test-module
+1. Create or edit your ~/.npmrc file:
 
-# Using pnpm
-pnpm add calendar-test-module
+```
+@jacob-thesqd:registry=https://npm.pkg.github.com
 ```
 
-To install directly from GitHub:
+2. Install the package:
 
 ```bash
-npm install github:username/calendar-test-module
+# Using npm
+npm install @jacob-thesqd/calendar-test-module
+
+# Using yarn
+yarn add @jacob-thesqd/calendar-test-module
+
+# Using pnpm
+pnpm add @jacob-thesqd/calendar-test-module
+```
+
+Alternatively, you can install directly from GitHub:
+
+```bash
+npm install github:jacob-thesqd/calendar-test-module
 ```
 
 ## Usage
@@ -36,7 +46,7 @@ npm install github:username/calendar-test-module
 ### Basic Usage
 
 ```jsx
-import { CalendarComponent } from 'calendar-test-module';
+import { CalendarComponent } from '@jacob-thesqd/calendar-test-module';
 
 export default function CalendarPage() {
   return (
@@ -54,7 +64,7 @@ You can provide your own events and handlers:
 
 ```jsx
 import { useState } from 'react';
-import { EventCalendar, type CalendarEvent } from 'calendar-test-module';
+import { EventCalendar, type CalendarEvent } from '@jacob-thesqd/calendar-test-module';
 
 export default function CustomCalendar() {
   const [events, setEvents] = useState<CalendarEvent[]>([
