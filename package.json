@@ -1,0 +1,46 @@
+{
+  "name": "@username/calendar-test-module",
+  "version": "1.0.0",
+  "description": "Reusable calendar component for React applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/calendar-test-module.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "calendar",
+    "react",
+    "component",
+    "event-calendar"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "peerDependencies": {
+    "date-fns": "^4.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-popover": "^1.1.13",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.510.0",
+    "tailwind-merge": "^3.3.0"
+  }
+}
